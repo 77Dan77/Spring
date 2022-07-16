@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <!-- Base Define -->
+    <definition name="base.definition"
+                template="/WEB-INF/layouts/template.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />
+<!--        <put-attribute name="menu" value="/resources/templates/basefragments/_menu.jsp" />-->
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />
+    </definition>
+
+    <!-- Home Page  -->
+    <definition name="homePage" extends="base.definition">
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />
+        <put-attribute name="title" value="Home Page" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_home.jsp" />
+    </definition>
+
+    <!-- Customer Page -->
+    <definition name="customerPage" extends="base.definition">
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />
+        <put-attribute name="title" value="Customer page" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/customer/_bodyCustomer.jsp" />
+    </definition>
+
+    <!-- AddCustomer Page -->
+    <definition name="addCustomerPage" extends="base.definition">
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />
+        <put-attribute name="title" value="Add Customer page" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/customer/_addCustomer.jsp" />
+    </definition>
+
+    <!-- CarDealer Page -->
+    <definition name="carDealerPage" extends="base.definition">
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />
+        <put-attribute name="title" value="Car Dealer page" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/carDealer/_bodyCarDealer.jsp" />
+    </definition>
+
+    <!-- AddCarDealer Page -->
+    <definition name="addCarDealerPage" extends="base.definition">
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />
+        <put-attribute name="title" value="Car Dealer page" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/carDealer/_addCarDealer.jsp" />
+    </definition>
+
+    <!-- AddCar Page -->
+    <definition name="addCarPage" extends="base.definition">
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />
+        <put-attribute name="title" value="Car page" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/car/_addCar.jsp" />
+    </definition>
+
+    <!-- Car Page -->
+    <definition name="carPage" extends="base.definition">
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />
+        <put-attribute name="title" value="Car page" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/car/_bodyCar.jsp" />
+    </definition>
+
+    <!-- Soket Page -->
+    <definition name="socketPage" extends="base.definition">
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />
+        <put-attribute name="title" value="Socket page" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_webSocket.jsp" />
+    </definition>
+
+    <!-- Upload Page -->
+    <definition name="uploadPage" extends="base.definition">
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />
+        <put-attribute name="title" value="Socket page" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_uploadFile.jsp" />
+    </definition>
+
+    <!-- Error Page -->
+    <definition name="errorPage" extends="base.definition">
+        <put-attribute name="title" value="Error" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_error.jsp" />
+    </definition>
+
+
+</tiles-definitions>
